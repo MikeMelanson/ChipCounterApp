@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/date_title"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/date_get_text"
+        android:layout_width="200dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="date"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/date_title"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/spent_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/date_title"
+        android:text="@string/spent_title"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/spent_get_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/date_title"
+        android:layout_marginTop="38dp"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/won_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:layout_below="@id/spent_title"
+        android:text="@string/won_title"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/won_get_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/date_title"
+        android:layout_marginTop="76dp"
+        android:inputType="numberDecimal"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/won_title"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

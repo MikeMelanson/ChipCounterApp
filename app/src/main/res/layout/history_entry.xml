@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spent"
+        android:layout_below="@id/date"
+        android:paddingStart="32dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/won"
+        android:layout_below="@id/date"
+        android:layout_toEndOf="@id/spent"
+        android:paddingStart="32dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"/>
+</RelativeLayout>
